@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { createClient } from '@supabase/supabase-js';
 import './Carrito.css';
-
+// Módulo Carrito - Tarea Jira CAF-3 - Responsable: Jesús Zeballos
 // ============================================================================
 // 1. CONFIGURACIÓN DE SUPABASE
 // ============================================================================

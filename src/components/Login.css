@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #6e5d19, #723f2d);
+  font-family: 'Quicksand', sans-serif;
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+
+}
+.login-box {
+  background: #300517;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(80, 45, 30, 0.2);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  transition: transform 0.4s ease;
+  animation: floatIn 1.2s ease forwards;
+}
+
+.login-box:hover {
+  transform: translateY(-5px);
+}
+
+.login-box h2 {
+  margin-bottom: 1.5rem;
+  color: #089ce0;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #c8b6a6;
+  border-radius: 12px;
+  background-color: #030303;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  color: white;
+}
+
+.login-box input:focus {
+  border-color: #a1887f;
+  outline: none;
+  box-shadow: 0 0 8px rgba(161, 136, 127, 0.3);
+}
+
+.login-box button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #105801;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-box button:hover {
+  background: #5d4037;
+  transform: scale(1.02);
+}
+
+.error {
+  color: #d84315;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.slogan {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #6d4c41;
+  font-style: italic;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    background-position: center;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,132 @@
+/* Menu Accordion CSS Mejorado */
+.menu-accordion {
+  background: url('/fondo1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  padding: 4rem 2rem;
+  backdrop-filter: blur(3px);
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #f4b400;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.menu-section {
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.menu-toggle {
+  width: 100%;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+  backdrop-filter: blur(2px);
+}
+
+.menu-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+.menu-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.3s ease;
+}
+
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.menu-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-item strong {
+  color: #f4b400;
+  font-size: 1.3rem;
+}
+
+.menu-item p {
+  margin: 0.3rem 0 0;
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+.menu-item .precio {
+  font-weight: bold;
+  color: #fff;
+  margin-top: 0.3rem;
+}
+
+.btn-pedir {
+  margin-top: 0.5rem;
+  background: #f4b400;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-pedir:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 10px #f4b400;
+}
+
+@media (max-width: 600px) {
+  .menu-title {
+    font-size: 2rem;
+  }
+  .menu-toggle {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+  .menu-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu-img {
+    width: 80px;
+    height: 80px;
+  }
+}

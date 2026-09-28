@@ -1,0 +1,99 @@
+.reserva-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+  background-color: #111;
+  color: #fff;
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input[type="text"],
+input[type="date"] {
+  padding: 6px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.mesas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.mesa-card {
+  border: 2px solid #555;
+  border-radius: 10px;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+  width: 120px;
+  transition: all 0.3s ease;
+  background-color: #222;
+}
+
+.mesa-card img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.mesa-card:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+.mesa-card.seleccionada {
+  border: 2px solid #ffa500;
+  background-color: #333;
+}
+
+.horario-grid {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hora-btn {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.hora-btn:hover {
+  background-color: #444;
+}
+
+.hora-btn.seleccionada {
+  background-color: #ffa500;
+}
+
+.hora-btn.ocupada {
+  background-color: #aa0000;
+  cursor: not-allowed;
+  color: #ddd;
+}
+
+.btn-reservar {
+  margin-top: 20px;
+  background-color: #ffa500;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-reservar:hover {
+  background-color: #ff8800;
+}
